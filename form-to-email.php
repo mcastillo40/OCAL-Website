@@ -1,21 +1,33 @@
 <?PHP
+$name = $email = $phone = $city = $project_type = $property_type = $start_date = $size = $referral = $comments = "";
 
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $to       	     = 'ocartisticlandscape@gmail.com';
 $subject  		 = 'Free Estimate';
-$name     	     = $_POST['name'];
-$email	  		 = $_POST['email'];
-$phone           = $_POST['phone'];
-$city            = $_POST['city'];
+$name     	     = check_input($_POST['name']);
+$email	  		 = check_input($_POST['email']);
+$phone           = check_input($_POST['phone']);
+$city            = check_input($_POST['city']);
 $project_type    = $_POST['project_type'];
 $property_type   = $_POST['property_type'];
 $start_date      = $_POST['start_date'];
-$size		 	 = $_POST['size'];
+$size		 	 = check_input($_POST['size']);
 $referral        = $_POST['referral'];
-$comments        = $_POST['comments'];
+$comments        = check_input($_POST['comments']);
+}
+
+function check_input($data)
+ {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+ }
 
 $message = "
 
-You Received an estimate request from Matts website!
+You Received an estimate request from Matt's website!
 
 Name: $name
 Email: $email
@@ -32,7 +44,8 @@ Additional Comments: $comments
 
 $headers = 'From: Proposal@matt.com';
 
-mail($to, $subject, $message, $headers);
+if ($name && $email && $phone) {
+	mail($to, $subject, $message, $headers); }
 
 header('Location: thanks.html');
 exit();

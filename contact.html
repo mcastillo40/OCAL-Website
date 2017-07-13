@@ -37,7 +37,7 @@
 
 		<div class="container">
 			<p id="feedback"><?php echo $feedback; ?></p>
-			<form action="form-to-email.php" method="post" enctype="multipart/form-data" name="myForm">
+			<form action="form-to-email.php" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>"  method="post" enctype="multipart/form-data" name="myForm">
 				<fieldset>
 					<legend>CONTACT US</legend>
 						<table>
