@@ -1,7 +1,17 @@
 <?PHP
 $name = $email = $phone = $city = $project_type = $property_type = $start_date = $size = $referral = $comments = "";
 
+// Check the sender's input to trim and remove slashes and
+// special characters  
+function check_input($data)
+ {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+ }
 
+// Request method must be 'POST'
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $to       	     = 'ocartisticlandscape@gmail.com';
 $subject  		 = 'Free Estimate';
@@ -17,14 +27,7 @@ $referral        = $_POST['referral'];
 $comments        = check_input($_POST['comments']);
 }
 
-function check_input($data)
- {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
- }
-
+// Message to be sent to owner
 $message = "
 
 You Received an estimate request from Matt's website!
@@ -44,6 +47,8 @@ Additional Comments: $comments
 
 $headers = 'From: Proposal@matt.com';
 
+// Send information and message if name, email, and phone number were
+// included. 
 if ($name && $email && $phone) {
 	mail($to, $subject, $message, $headers); }
 
