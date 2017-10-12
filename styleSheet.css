@@ -1,0 +1,421 @@
+body {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: medium;
+  color: #666666;
+  margin:0;
+  padding:0;
+  height: 100%;
+}
+
+h1 {
+  font-size: 220%;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #222222;
+}
+
+h2, h3, h4, h5 {
+  color: #222222;
+}
+
+.font-bold {
+  font-weight: bold;
+  color: #333333;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  float: right;
+}
+
+.center-margin {
+  margin: 0 auto;
+}
+
+.vertical-align {
+  display: flex; 
+  align-items: center;
+}
+
+/* NAVICATION BAR */
+#navbarArea {
+  background-color: #222222 !important;
+  padding: 1px;
+  padding-left: 15px;
+}
+
+#navbarNav {
+  font-size: 140%;
+}
+
+#navbarNav a {
+  height: 50px;
+}
+
+#navbarNav a:hover {
+  -webkit-transition: all 700ms ease;
+  -moz-transition: all 700ms ease;
+  -ms-transition: all 700ms ease;
+  -o-transition: all 700ms ease;
+  transition: all 700ms ease;
+  color: #ED7101;
+  border-bottom: 2px solid #ED7101;
+  padding-bottom: 5px;
+}
+
+@media (max-width: 991px) { 
+  #navbarNav a:hover {
+    -webkit-transition: all 700ms ease;
+    -moz-transition: all 700ms ease;
+    -ms-transition: all 700ms ease;
+    -o-transition: all 700ms ease;
+    transition: all 700ms ease;
+    color: #ED7101;
+    border-bottom: none;
+  }
+}
+
+#navbarNav .active a:hover {
+  color: white;
+  border-bottom: none;
+}
+
+/* BUTTON Default not disp */
+#myBtn {
+  display: none;
+}
+
+/* HOME PAGE */
+.carousel-inner img {
+  margin: auto;
+} 
+
+#companySummary {     
+  text-align: center;
+  margin-top: 45px;  
+}
+
+#companyinfo {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ESTIMATE LINK */
+#estimate {
+  margin: 0px;
+  padding: 0px;
+}
+
+#estimate a {
+  color: #ED7101;
+  text-decoration: underline;
+}
+
+/* FOOTER ITEMS */
+footer {
+  background-color: #222222;
+  margin-top: 40px;
+  text-align: center;
+  color: white;
+}
+
+footer a:link {
+  color: white;
+  font-weight: bold;
+}
+
+footer a:visited {
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+#site-options a:hover {
+  -webkit-transition: all 700ms ease;
+  -moz-transition: all 700ms ease;
+  -ms-transition: all 700ms ease;
+  -o-transition: all 700ms ease;
+  transition: all 700ms ease;
+  color: #ED7101;
+}
+
+#fbimage {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  position: relative; 
+  bottom: 1px; 
+}
+
+#links {
+  background-color: #333333; 
+  padding-top: 10px; 
+  text-align: center;
+}
+
+.footerImg {
+  display: inline-block;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+footer img:hover {
+  opacity: 0.8;
+}
+
+#phone:hover {
+  text-decoration: none;
+}
+
+#contact-information {
+  margin-bottom: 10px;
+  padding-top: 15px;
+}
+
+#site-options {
+  margin-bottom: 7px;
+}
+
+#copyRight {
+  padding-top: 12px;
+  font-size: 90%;
+  background-color: #4D4D4D;
+}
+
+/* PHILOSOPHY PAGE */
+#philosophy-content {
+  margin-top: 40px;
+}
+
+.philosophy-list li {
+  padding-right: 30px;
+  list-style-type: none;
+  color: #ED7101;
+}
+
+.sitemap-list {
+  padding-right: 30px;
+  list-style-type: none;
+  color: #ED7101;
+}
+
+.sitemap-list a {
+  font-weight: bold;
+  color: #666666;
+}
+
+.sitemap-list a:visited {
+  color: #666666;
+}
+
+.sitemap-list a:hover {
+  text-decoration: none;
+  color: #ED7101;
+}
+
+/* TESTIMONIAL PAGE */
+#testimonial-content {
+  margin-top: 40px; 
+}
+
+blockquote {
+  font-size: 105%;
+  font-style: italic;
+  padding: 10px;
+}
+
+.section-padding {
+  padding-top: 30px;
+}
+
+/* CONTACT PAGE */
+#contact-content {
+  margin-top: 50px;
+}
+
+#contact-content a {
+  color: #ED7101;
+}
+
+#fax {
+  color: #ED7101;
+}
+
+#form-info {
+  margin-top: 30px;
+}
+
+#submit {
+    background-color: #ED7101; 
+    border: 2px solid white;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    cursor: pointer;
+    border-radius: 12px;
+    float: right;
+}
+
+#submit:hover {
+    background-color: white; 
+    color: #ED7101; 
+    border: 2px solid #ED7101;
+}
+
+/* PRIVACY INFO */
+#privacy_content {
+  margin-top: 40px; 
+}
+
+/* Legal INFO */
+#legal_content {
+  margin-top: 40px; 
+}
+
+/* SITE MAP */
+#sitemap_content {
+  margin-top: 40px; 
+}
+
+#sitemap_info {
+  margin-top: 20px;
+}
+
+#sitemap_info img{
+  margin-top: 30px;
+}
+
+/* SERVICES PAGE */
+#services-content {
+   margin-top: 50px; 
+}
+
+/* IMAGES */
+.jumbotron {
+  background-size: cover;
+  padding: 0;
+  margin: auto 0; 
+} 
+
+#philosophyImg img {
+
+}
+
+#indexImg1 {
+  background-image: url("images/frontPage/ceiling1.jpg");
+  height: 500px;
+  border-radius: 0px;
+
+  /* Create the parallax scrolling effect */
+  min-width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*
+#philosophyImg {
+  background-image: url("images/walkway1.jpg");
+  height: 400px;
+  border-radius: 0px;
+
+
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*/
+
+/*
+#testimonialImg {
+  background-image: url("images/frontPage/ceiling1.jpg");
+  height: 500px;
+  border-radius: 0px;
+
+  /* Create the parallax scrolling effect 
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+/*
+#servicesImg1 {
+  background-image: url("images/frontPage/house2.jpg");
+  background-size: cover;
+  height: 400px;
+  border-radius: 0px;
+
+  /* Create the parallax scrolling effect 
+  min-width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+#servicesImg2 {
+  background-image: url("images/frontPage/ceiling1.jpg");
+  background-size: cover;
+  height: 350px;
+  border-radius: 0px;
+
+  /* Create the parallax scrolling effect */
+  min-width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/* Media Quieries to adjust page layout */
+@media (max-width: 767px) { 
+  #footerSquare {
+    display: none;
+  }
+}
+
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) { 
+ 
+  /* BUTTON CONTROL */
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 5px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+  }
+}
+
+/* Medium devices (tablets, less than 871px) */
+@media (max-width: 870px) { 
+ 
+}

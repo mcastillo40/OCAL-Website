@@ -1,183 +1,170 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>OC Artistic Landscape - Contact Us</title>
-		<link rel="stylesheet" type="text/css" href="cssSheet.css">
-		<link rel="stylesheet" type="text/css" href="formCss.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="format-detection" content="telephone=no">
-   		<meta name="description" content="Landscape contractor introduction."/>
-    	<meta name="keywords" content="Contractor, Landscape Contractor, Hardscaping, BBQ, Softscaping, Patio"/>
-	</head>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>OC Artistic Landscape</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="OC Artistic Landscape has been involved in residential and commercial design since 2004. We are a full landscape construction company serving Orange County."/>
+    <meta name="keywords" content="Contractor, Landscape Contractor, Hardscaping, BBQ, Softscaping, Patio"/>
 
-	<body>
-		<div class="wrapper">
-		<header>
-			<div class="container">
-				<div><a href="index.html"><img id="logo" src="images/artisticLogo.png" alt="OC Artistic Logo"></a></div>
-				<div id="motto"><h2>DESIGN INSPIRATION</h2></div>
-				<p id="connected" class="right">
-					STAY CONNECTED: &nbsp;
-					<a href="https://www.facebook.com/OCArtisticLandscape/?fref=ts" target="_blank"><img id="fbimage" src="images/facebook.png"  alt="Link to Facebook account" width="24" height="24"></a>
-				</p>
-			</div> <!-- container -->
-				<nav>
-				 	<div class="container">
-		              <ul>
-		                  <li><a href="index.html">HOME</a></li>
-		                  <li><a href="philosophy.html">PHILOSOPHY</a></li>
-		                  <li><a href="services.html">SERVICES</a></li>
-		                  <li><a href="testimonial.html">TESTIMONIALS</a></li>
-		                  <li><a href="contact.html">CONTACT US</a></li>
-		              </ul>
-		            </div> <!-- container -->
-				</nav>
-		</header>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
-		<div class="container">
-			<p id="feedback"><?php echo $feedback; ?></p>
-			<form action="form-to-email.php" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>"  method="post" enctype="multipart/form-data" name="myForm">
-				<fieldset>
-					<legend>CONTACT US</legend>
-						<table>
-							<tr>
-								<td class="right">Main:</td>
-								<td>714.651.6877</td>
-							</tr>
-							<tr>
-								<td class="right">Fax:</td>
-								<td>714.557.3021</td>
-							</tr>
-							<tr>
-								<td class="right">Email: </td>
-								<td><a href="mailto:ocartisticlandscape@gmail.com">ocartisticlandscape@gmail.com</a></td>
-							</tr>
-						</table>
-					</fieldset>
-					<fieldset>
-						<legend>GET A FREE ESTIMATE</legend>
-						<p><img src=""></p>
-							<p class="center">Thank you for taking an interest in our services.<br> We our confident
-								that OC Artistic Landscape is the right company for your renovation project.<br>
-							Please provide us with infomation about your project and one of our
-							representatives will contact you soon.</p> <br>
-						<table id="table">
-							<tr>
-								<td class="right"><span class="note">Note: <span class="red">*</span> indicates a required field &nbsp;</span></td>
-								<td></td>
-							</tr>
-							<tr>
-								<td class="right">Name <span class="red">*</span><td>
-								<td><input type="text" id="name" name="name" value="" required></td>
-							</tr>
-							<tr>
-								<td class="right">Email Address <span class="red">*</span><td>
-								<td><input type="email" id="email" name="email" value="" required></td>
-							</tr>
-							<tr>
-								<td class="right">Contact Number <span class="red">*</span><td>
-								<td><input type="tel" id="phone" name="phone" value="" required></td>
-							</tr>
-							<tr>
-								<td class="right">Project City &nbsp;<td>
-								<td><input type="text" id="city" name="city" value=""></td>
-							</tr>
-							<tr>
-								<td class="right">Project Type &nbsp;<td>
-								<td>
-									<select id="project_type" name="project_type" class="choice">
-										<option value="Default">Please Select...</option>
-										<option value="Driveway">Driveway</option>
-										<option value="Walkway">Walkway</option>
-										<option value="Poolside">Pool Side</option>
-										<option value="Backyard">Backyard</option>
-										<option value="Patio">Patio</option>
-										<option value="Wall">Wall</option>
-										<option value="Other">Other</option>
-									</select>
-								</td>
-							</tr>
-							<tr>
-								<td class="right">Property Type &nbsp;<td>
-								<td>
-									<select id="property_type" name="property_type" class="choice">
-										<option value="Default">Please Select...</option>
-										<option value="Residential">Residential</option>
-										<option value="Commercial">Commercial</option>
-									</select>
-								</td>
-							</tr>
-							<tr>
-								<td class="right">When would you like to start your project &nbsp;<td>
-								<td>
-									<select id="start_date" name="start_date" class="choice">
-										<option value="Default">Please Select...</option>
-										<option value="Immediately">Immediately</option>
-										<option value="within 30 days">Within 30 days</option>
-										<option value="1-2 months">1-2 Months</option>
-										<option value="3-6 months">3-6 Months</option>
-										<option value="Other">Other</option>
-									</select>
-								</td>
-							</tr>
-							<tr>
-								<td class="right">Approximate Square Footage &nbsp;<td>
-								<td><input type="text" id="size" name="size" value=""></td>
-							</tr>
-							<tr>
-								<td class="right">How did you hear about us &nbsp;<td>
-								<td>
-									<select id="referral" name="referral" class="choice">
-										<option value="Default">Please Select...</option>
-										<option value="Door">Door Hanger</option>
-										<option value="Flyer">Flyer</option>
-										<option value="Dealer">Dealer</option>
-										<option value="Backyard">Backyard</option>
-										<option value="Word Of Mouth">Word Of Mouth</option>
-										<option value="Google">Web - Google</option>
-										<option value="Other">Other</option>
-									</select>
-								</td>
-							</tr>
-							<tr>
-								<td class="right">Comments &nbsp;<td>
-								<td>&nbsp;<td>
-							</tr>
-							<tr>
-								<td>&nbsp;<td>
-								<td>
-									<textarea id="comments" name="comments" cols="56" rows="15"></textarea>
-								</td>
-							</tr>
-							<tr>
-								<td>&nbsp;</td>
-								<td class ="right" colspan="2"><input type="submit" value="submit" id="submit"></td>
-							</tr>
-						</table>
-					</fieldset>
-				</form>
-			</div> <!-- Container -->
-			<div class="push"></div>
-		</div> <!-- wrapper -->
+    <!-- created CSS -->
+    <link rel="stylesheet" type="text/css" href="styleSheet.css">
 
-			<footer>
-				<div class="container">
-					<p>
-            		<a href="https://www.icpi.org/" target="_blank"><img src="images/ICPI_logo.gif" class="footerImg" alt="Link to ICPI licensing site" width="81" height="86"></a>
+  </head>
+  <body>
 
-            		<a href="https://www.homeadvisor.com/rated.OCArtisticLandscape.39919176.html" target="_blank"><img src="images/elite.png" class="footerImg" alt="Elite homeadvisor contractor award" width="90" height="86"></a>
+    <nav id="navbarArea" class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container" >
 
-            		<a href="https://www.homeadvisor.com/rated.OCArtisticLandscape.39919176.html" target="_blank"><img src="images/toprated.png" class="footerImg" alt="Top rated homeadvisor contractor award" width="75" height="86"></a>
-          			</p>
-              		<p>1902 S. WOODLAND PLACE, SANTA ANA, CA 92707 | 714-651-6877</p>
-              		<p><a href="privacypolicy.html"> PRIVACY POLICY</a> | <a href="legalNotice.html">LEGAL NOTICE</a> |<a href="siteMap.html">SITEMAP</a></p>
-				</div> <!-- container -->
-				<div id="copyright">
-		          <div class="container">
-		            <p>Copyright &copy; 2012 OC ARTISTIC LANDSCAPE, All Rights Reserved.</p>
-		          </div> <!-- container -->
-				</div> <!-- copyright -->
-			</footer>
-	</body>
+          <a class="navbar-brand" href="index.html"><img id="logo" src="images/artisticLogo.png" alt="OC Artistic Logo" height="90"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav" >
+            <ul class="navbar-nav mx-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html"><strong>Home</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="philosophy.html"><strong>Philosophy</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html"><strong>Services</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html"><strong>Gallery</strong></a>
+              </li>              
+              <li class="nav-item">
+                <a class="nav-link" href="testimonials.html"><strong>Testimonials</strong></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contact.html"><strong>Contact</strong><span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+
+          </div> <!-- navbarNav -->
+      </div> <!-- container -->
+    </nav>
+
+    <div id="contact-content" class="container">
+      <h4><strong>Contact OC Artistic Landscape</strong></h4>
+      <hr class="my-4">
+      <div id="form-info" class="row">
+        <div class="col-md-6">
+          <p>
+            Thank you for taking an interest in our services.<br><br> We our confident
+            that OC Artistic Landscape is the right company for your renovation project.<br><br>
+            Please provide us with infomation about your project and one of our
+            representatives will contact you soon. <br> <br>
+            Phone: <a id="phone" href="tel:+17146516874">(714) 651-6877</a><br>
+            Fax:&nbsp; &nbsp; &nbsp;<span id="fax">(714) 557-3021</span><br>
+            Email: &nbsp;<a href="mailto:ocartisticlandscape@gmail.com">ocartisticlandscape@gmail.com</a>
+          </p>
+        </div>
+        
+        <div class="col-md-6">
+          <form id="form-content" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>"  method="post" enctype="multipart/form-data" name="myForm">
+            <div class="form-group row">
+                <label for="name" class="col-sm-4 col-form-label" required>Name</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="name" value="" required>
+                </div>
+            </div>
+            <div class="form-group row">
+              <label for="email" class="col-sm-4 col-form-label">Email</label>
+              <div class="col-sm-8">
+                <input type="email" class="form-control" id="email" value="" required>
+              </div>
+            </div>
+            <div class="form-group row">
+                <label for="phone" class="col-sm-4 col-form-label">Contact Number</label>
+                <div class="col-sm-8">
+                  <input type="tel" class="form-control" id="phone" value="" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="city" class="col-sm-4 col-form-label">Project City</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="city" value="">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="project_type" class="col-sm-4 col-form-label">Project Type</label>
+                <div class="col-sm-8">
+                  <select class="form-control" id="project_type">
+                  <option selected>Choose...</option>
+                  <option value="Driveway">Driveway</option>
+                  <option value="Walkway">Walkway</option>
+                  <option value="Poolside">Pool Side</option>
+                  <option value="Backyard">Backyard</option>
+                  <option value="Patio">Patio</option>
+                  <option value="Wall">Wall</option>
+                  <option value="Other">Other</option>
+                  </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+              <label for="comments">Comments</label>
+              <textarea class="form-control" id="comments" rows="8"></textarea>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-sm-12">
+                <input class="btn btn-outline-warning btn-lg" type="submit" value="Submit" id="submit">
+                <!-- <button id="submit" type="submit" class="btn btn-primary">Sign in</button> -->
+              </div>
+            </div>
+          </form>
+
+        </div> <!-- form column -->
+      </div> <!-- Row -->
+    </div> <!-- contact-content -->
+
+    <footer>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-7"> 
+                <p id="contact-information"><span class="small">1902 S. WOODLAND PLACE, SANTA ANA, CA 92707 &nbsp; <br> <a id="phone" href="tel:+17146516874">714 - 651 - 6877</a></span> &nbsp; | &nbsp;
+                  <a href="https://www.facebook.com/OCArtisticLandscape/?fref=ts" target="_blank"><img id="fbimage" src="images/links/facebook245.png" alt="Link to Facebook account"></a>
+                </p>
+
+                <p id="site-options"><span class="small"><a href="privacypolicy.html">PRIVACY POLICY </a> &nbsp; | &nbsp; <a href="legalNotice.html"> LEGAL NOTICE </a> &nbsp; | &nbsp;
+                  <a href="siteMap.html"> SITEMAP</a></span></p>
+
+              </div>
+              <div id="links" class="col-md-4">
+                <p>
+                  <a href="https://www.icpi.org/" target="_blank"><img src="images/links/ICPI_logo.gif" class="footerImg" alt="Link to ICPI licensing site"  height="86"></a>
+                  
+                  <a href="https://www.homeadvisor.com/rated.OCArtisticLandscape.39919176.html" target="_blank"><img src="images/links/elite.png" class="footerImg" alt="Elite homeadvisor contractor award" height="86"></a>
+
+                  <a href="https://www.homeadvisor.com/rated.OCArtisticLandscape.39919176.html" target="_blank"><img src="images/links/toprated.png" class="footerImg" alt="Top rated homeadvisor contractor award" height="86"></a>
+                </p>
+              </div>
+              <div id="footerSquare" class="col-md-1"></div>
+          </div>
+
+          <div class="row">
+            <div id="copyRight" class="col-md-12"><span class="small"><p> Copyright &copy; 2012 OC ARTISTIC LANDSCAPE, All Rights Reserved.</p></span>
+            </div>
+          </div>
+
+      </div>
+
+  </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+  </body>
 </html>
