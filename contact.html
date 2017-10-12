@@ -68,7 +68,7 @@
         </div>
         
         <div class="col-md-6">
-          <form id="form-content" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>"  method="post" enctype="multipart/form-data" name="myForm">
+          <form id="form-content" action="formPHP/form-to-email.php"  method="post" enctype="multipart/form-data" name="myForm">
             <div class="form-group row">
                 <label for="name" class="col-sm-4 col-form-label" required>Name</label>
                 <div class="col-sm-8">
@@ -118,7 +118,6 @@
             <div class="form-group row">
               <div class="col-sm-12">
                 <input class="btn btn-outline-warning btn-lg" type="submit" value="Submit" id="submit">
-                <!-- <button id="submit" type="submit" class="btn btn-primary">Sign in</button> -->
               </div>
             </div>
           </form>
